@@ -6,7 +6,7 @@ info:
     API Gateway for Doctor Service and Pharmacy Service.
     Provides authentication and prescription management functionalities for doctors and pharmacies.
 servers:
-  - url: http://localhost:4000
+  - url: https:/prescription-gateway-aqgcewarhgbshfev.canadacentral-01.azurewebsites.net
     description: Gateway Local Server
 
 
