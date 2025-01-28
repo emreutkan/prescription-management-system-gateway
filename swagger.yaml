@@ -797,6 +797,9 @@ components:
           type: string
           example: "64a7f2e50935712345678pharm"
           description: The ID of the pharmacy handling the prescription.
+        IssuerPharmacyEmail:
+          type: string
+          example: "pharmacy@example.com"
         medicines:
           type: array
           items:
