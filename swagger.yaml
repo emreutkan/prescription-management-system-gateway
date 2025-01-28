@@ -9,7 +9,6 @@ servers:
   - url: http://localhost:4000
     description: Gateway Local Server
 
-
 security:
   - bearerAuth: []
 
@@ -28,6 +27,7 @@ tags:
     description: General Pharmacy operations.
 
 paths:
+
   ## Medicine Endpoints
   /medicine/search:
     get:
@@ -75,7 +75,7 @@ paths:
               properties:
                 username:
                   type: string
-                  example: "doctor1"
+                  example: "emreutkan"
                   description: The doctor's username.
                 password:
                   type: string
@@ -98,8 +98,11 @@ paths:
                   token:
                     type: string
                     example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-        '401':
-          description: Invalid credentials
+                  role:
+                    type: string
+                    example: "doctor"
+        '404':
+          description: Invalid username or password
           content:
             application/json:
               schema:
@@ -126,12 +129,12 @@ paths:
               properties:
                 username:
                   type: string
-                  example: "doctor1"
+                  example: "emreutkan"
                   description: The doctor's desired username.
                 email:
                   type: string
                   format: email
-                  example: "doctor1@example.com"
+                  example: "emreutkan@example.com"
                   description: The doctor's email address.
                 password:
                   type: string
@@ -153,6 +156,9 @@ paths:
                   message:
                     type: string
                     example: "Doctor registered successfully"
+                  role:
+                    type: string
+                    example: "doctor"
         '400':
           description: Doctor already exists
           content:
@@ -406,16 +412,18 @@ paths:
             schema:
               type: object
               properties:
-                username:
+                email:
                   type: string
-                  example: "pharmacy001"
-                  description: The pharmacy's username.
+                  format: email
+                  example: "pharmacy@example.com"
+                  description: The pharmacy's email.
                 password:
                   type: string
-                  example: "securepassword"
+                  format: password
+                  example: "secure_password"
                   description: The pharmacy's password.
               required:
-                - username
+                - email
                 - password
       responses:
         '200':
@@ -427,10 +435,16 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: "Pharmacy logged in successfully"
+                    example: "Login successful"
                   token:
                     type: string
                     example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                  role:
+                    type: string
+                    example: "pharmacy"
+                  name:
+                    type: string
+                    example: "Pharmacy ABC"
         '401':
           description: Invalid credentials
           content:
@@ -463,20 +477,22 @@ paths:
             schema:
               type: object
               properties:
-                username:
+                email:
                   type: string
-                  example: "pharmacy001"
-                  description: The pharmacy's desired username.
+                  format: email
+                  example: "pharmacy@example.com"
+                  description: The pharmacy's email address.
                 password:
                   type: string
-                  example: "securepassword"
+                  format: password
+                  example: "secure_password"
                   description: The pharmacy's desired password.
                 name:
                   type: string
                   example: "Pharmacy ABC"
                   description: The name of the pharmacy.
               required:
-                - username
+                - email
                 - password
                 - name
       responses:
@@ -490,6 +506,9 @@ paths:
                   message:
                     type: string
                     example: "Pharmacy registered successfully"
+                  role:
+                    type: string
+                    example: "pharmacy"
         '400':
           description: Pharmacy already exists
           content:
