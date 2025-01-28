@@ -1,0 +1,1 @@
+prescription-gateway-aqgcewarhgbshfev.canadacentral-01.azurewebsites.net
