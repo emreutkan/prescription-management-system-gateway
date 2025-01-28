@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 module.exports = {
-    PORT: process.env.PORT || 4000,
+    PORT: process.env.PORT || 8080,
     DOCTOR_SERVICE_URL: process.env.DOCTOR_SERVICE_URL || 'http://localhost:3001/api/v1',
     PHARMACY_SERVICE_URL: process.env.PHARMACY_SERVICE_URL || 'http://localhost:8080/api/v1',
     JWT_SECRET: process.env.JWT_SECRET || 'your_jwt_secret_key',
