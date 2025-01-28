@@ -11,7 +11,7 @@ router.patch('/pharmacy/prescriptions/:prescriptionId', (req, res) => forwardReq
 router.patch('/pharmacy/prescriptions/:prescriptionId/complete', (req, res) =>
     forwardRequest(PRESCRIPTION_SERVICE_URL, req, res)
 );
-router.get('/doctor/prescriptions/search/:tcId', (req, res) => forwardRequest(PRESCRIPTION_SERVICE_URL, req, res));
+router.get('/pharmacy/prescriptions/search/:tcId', (req, res) => forwardRequest(PRESCRIPTION_SERVICE_URL, req, res));
 
 router.get('/doctor/prescriptions', (req, res) => forwardRequest(PRESCRIPTION_SERVICE_URL, req, res));
 router.post('/doctor/prescriptions', (req, res) => forwardRequest(PRESCRIPTION_SERVICE_URL, req, res));
