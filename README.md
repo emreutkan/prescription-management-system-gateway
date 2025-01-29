@@ -9,19 +9,43 @@ https://youtu.be/w0k5QrAZ328?si=9q1adVcuJY-5GKcI
 
 # REST OF THE PROJECT REPOSITORIES 
 
-https://github.com/emreutkan/prescription-frontend
+Frontend Repo: https://github.com/emreutkan/prescription-frontend 
 
-https://github.com/emreutkan/notificationService
-
-https://github.com/emreutkan/prescriptionService
-
-https://github.com/emreutkan/medicineService
-
-https://github.com/emreutkan/doctorservice
-
-https://github.com/emreutkan/pharmacyService
+Frontend Service Deployment: https://brave-smoke-02f1d840f.4.azurestaticapps.net
 
 ---
+
+Notification Service Repo: https://github.com/emreutkan/notificationService
+
+Notification Service Deployment: https://notificationservice-h8caaaeka7ceh0cx.canadacentral-01.azurewebsites.net/
+
+---
+
+Medicine Service Repo: https://github.com/emreutkan/medicineService
+
+Medicine Service Deployment: https://medicineservice-b3gcczakghhrfjc2.canadacentral-01.azurewebsites.net/
+
+---
+Prescription Service Repo: https://github.com/emreutkan/prescriptionService
+
+Prescription Service Deployment: https://prescriptionservice-bzgca7a4a2feeqge.canadacentral-01.azurewebsites.net/
+
+---
+
+Pharmacy Service Repo: https://github.com/emreutkan/pharmacyService
+
+
+Pharmacy Service Deployment: https://pharmacyservice-a6acf2bebehsgcfc.canadacentral-01.azurewebsites.net/
+
+
+---
+
+Doctor Service Repo: https://github.com/emreutkan/doctorservice
+
+Doctor Service Deployment: https://doctorservice-cgghevcrcrdvh5cx.canadacentral-01.azurewebsites.net/
+
+---
+
 
 ## Introduction
 
