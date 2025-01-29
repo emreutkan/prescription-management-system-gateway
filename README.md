@@ -1,6 +1,25 @@
 # API Gateway Service
 
 URL: https://prescription-gateway-aqgcewarhgbshfev.canadacentral-01.azurewebsites.net
+---
+
+# Presentation
+
+https://youtu.be/w0k5QrAZ328?si=9q1adVcuJY-5GKcI
+
+# REST OF THE PROJECT REPOSITORIES 
+
+https://github.com/emreutkan/prescription-frontend
+
+https://github.com/emreutkan/notificationService
+
+https://github.com/emreutkan/prescriptionService
+
+https://github.com/emreutkan/medicineService
+
+https://github.com/emreutkan/doctorservice
+
+https://github.com/emreutkan/pharmacyService
 
 ---
 
